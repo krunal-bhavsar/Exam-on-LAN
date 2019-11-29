@@ -1,0 +1,7 @@
+.signup{
+    -fx-background-color:#13A0D0;
+    -fx-text-fill: white;
+}
+.signup:hover{
+    -fx-background-color:#1085AD;
+}

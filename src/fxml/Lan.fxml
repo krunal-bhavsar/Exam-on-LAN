@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="homepage" prefHeight="628.0" prefWidth="698.0" stylesheets="@../css/home.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLDocumentController">
+   <children>
+      <AnchorPane fx:id="contentArea" layoutX="43.0" layoutY="54.0" prefHeight="574.0" prefWidth="698.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="54.0">
+         <children>
+            <JFXButton layoutX="392.0" layoutY="221.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#Signup" prefHeight="42.0" prefWidth="129.0" styleClass="button2" text="I'm a Student" textFill="WHITE" AnchorPane.leftAnchor="392.0" AnchorPane.topAnchor="221.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="56.0" layoutY="69.0" prefHeight="51.0" prefWidth="400.0" style="-fx-font-family: Helvetica; -fx-font-size: 35; -fx-font-weight: bold;" text="The Best Lan Exam App" textFill="#191d9b" AnchorPane.leftAnchor="56.0" AnchorPane.topAnchor="69.0" />
+            <JFXButton layoutX="181.0" layoutY="221.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#TeacherSignup" prefHeight="42.0" prefWidth="129.0" styleClass="button1" text="I'm a Teacher" textFill="WHITE" AnchorPane.leftAnchor="181.0" AnchorPane.topAnchor="221.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="56.0" layoutY="129.0" prefHeight="37.0" prefWidth="628.0" text="Millions of Students Trying this App for Conducting Exam on Lan for Better Resoruse Utilization and Privacy Concerns." AnchorPane.leftAnchor="56.0" AnchorPane.topAnchor="129.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="202.0" layoutY="15.0" prefHeight="51.0" prefWidth="698.0" style="-fx-background-color: #0055FF;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton layoutX="393.0" prefHeight="66.0" prefWidth="139.0" style="-fx-background-radius: 0px;" styleClass="button2" text="Join a Group" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="166.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="553.0" prefHeight="66.0" prefWidth="129.0" style="-fx-background-radius: 0px;" styleClass="button1" text="Login" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+            <Text fx:id="icon" fill="WHITE" layoutX="6.0" layoutY="34.0" onMouseClicked="#home" strokeType="OUTSIDE" strokeWidth="0.0" text="LanExam" wrappingWidth="154.7655577659607">
+               <font>
+                  <Font name="Segoe Script Bold" size="29.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

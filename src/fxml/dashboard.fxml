@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" stylesheets="@../css/dashboard.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardController">
+   <children>
+      <VBox layoutX="7.0" layoutY="52.0" prefHeight="576.0" prefWidth="162.0" style="-fx-background-color: #13A1D1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="52.0">
+         <children>
+            <JFXButton fx:id="dashboardbutton" alignment="TOP_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="162.0" text="Dashboard" textFill="#dfe8f7">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="14.0" styleClass="leftsidebutton" wrappingWidth="21.0" />
+               </graphic>
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="border" />
+                  <String fx:value="leftsidebutton" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton alignment="TOP_LEFT" layoutX="10.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="162.0" text="Class" textFill="#dfe8f7">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="GROUP" size="14.0" wrappingWidth="21.0" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="border" />
+                  <String fx:value="leftsidebutton" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="exam" alignment="TOP_LEFT" layoutX="10.0" layoutY="148.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="162.0" text="Exams" textFill="#dfe8f7">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="CHECK_CIRCLE_ALT" size="20.0" styleClass="border" wrappingWidth="21.0" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="border" />
+                  <String fx:value="leftsidebutton" />
+               </styleClass>
+            </JFXButton>
+         </children></VBox>
+      <AnchorPane prefHeight="52.0" prefWidth="698.0" style="-fx-background-color: #0055FF;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="522.0" layoutY="14.0" prefHeight="25.0" prefWidth="85.0" styleClass="uppersidelabel" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="14.0">
+               <graphic>
+                  <MenuButton fx:id="menu" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: transparent;" text="Admin" textFill="WHITE">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Profile" />
+                      <MenuItem mnemonicParsing="false" text="Logout" />
+                    </items>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="USER" size="15.0" />
+                     </graphic>
+                  </MenuButton>
+               </graphic>
+            </Label>
+            <Text fill="WHITE" layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LanExam" wrappingWidth="154.7655577659607">
+               <font>
+                  <Font name="Segoe Script Bold" size="29.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane fx:id="contentArea" layoutX="162.0" layoutY="52.0" prefHeight="716.0" prefWidth="1205.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="162.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="52.0">
+         <children>
+            <Text fill="#8884cf" layoutX="36.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" wrappingWidth="140.00003290176392">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+            <Label id="labelexam" fx:id="examlabel" layoutX="264.0" layoutY="135.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#Exams" prefHeight="89.0" prefWidth="192.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" depthTest="ENABLE" layoutX="413.0" layoutY="146.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="42.0" text="0" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER_RIGHT" depthTest="ENABLE" layoutX="390.0" layoutY="180.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="65.0" styleClass="innerlabel" text="Exams" textFill="#800b0b">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label id="labelstudnets" fx:id="studentlabel" layoutX="663.0" layoutY="135.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="89.0" prefWidth="192.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" depthTest="ENABLE" layoutX="811.0" layoutY="150.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="42.0" text="0" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER_RIGHT" depthTest="ENABLE" layoutX="750.0" layoutY="181.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="105.0" styleClass="innerlabel" text="Class" textFill="#800b0b">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

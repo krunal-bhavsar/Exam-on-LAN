@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="382.0" prefWidth="1056.0" styleClass="mainFxmlClass" stylesheets="@../css/exam1.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controller.Exam1Controller">
+   <children>
+      <AnchorPane fx:id="anchorexam" layoutX="301.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="347.0" prefWidth="1056.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0">
+         <children>
+            <Text fill="#4e8c73" layoutX="250.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam Name" wrappingWidth="199.662109375">
+               <font>
+                  <Font name="FontAwesome Regular" size="20.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="examname" layoutX="466.0" layoutY="44.0" prefHeight="25.0" prefWidth="207.0" styleClass="textf" />
+            <JFXTextField layoutX="466.0" layoutY="111.0" prefHeight="25.0" prefWidth="48.0" styleClass="textf" />
+            <Text fill="#4e8c73" layoutX="250.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No of Questions" wrappingWidth="199.662109375">
+               <font>
+                  <Font name="FontAwesome Regular" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#4e8c73" layoutX="250.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam Type" wrappingWidth="199.662109375">
+               <font>
+                  <Font name="FontAwesome Regular" size="20.0" />
+               </font>
+            </Text>
+            <ChoiceBox layoutX="466.0" layoutY="169.0" prefWidth="150.0" />
+            <JFXButton fx:id="examsubmitbutton" buttonType="RAISED" layoutX="370.0" layoutY="246.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#examsubmitmethod" prefHeight="54.0" prefWidth="200.0" styleClass="signup" text="Submit">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="1109.0" style="-fx-background-color: #364150;" text="Manage Exams" textFill="#f2ebeb" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="FontAwesome Regular" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+         <graphic>
+            <FontAwesomeIconView fill="#f2f2e5" glyphName="CALENDAR_CHECK_ALT" size="15" wrappingWidth="11.911458015441895" />
+         </graphic>
+      </Label>
+   </children>
+</AnchorPane>

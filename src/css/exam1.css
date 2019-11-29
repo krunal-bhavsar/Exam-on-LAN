@@ -1,0 +1,12 @@
+#anchorlabel{
+    -fx-border-color: #364150;
+    -fx-border-width: 0.8;
+}
+.signup{
+    -fx-background-color:#13A0D0;
+    -fx-text-fill: white;
+    -fx-font-size:25px;
+}
+.textf{
+    -fx-font-size:20px;
+}

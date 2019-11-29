@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1205.0" styleClass="mainFxmlClass" stylesheets="@../css/exams.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ExamsController">
+   <children>
+      <AnchorPane id="anchorlabel" fx:id="examcontentarea" layoutX="82.0" layoutY="189.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="382.0" prefWidth="1056.0" AnchorPane.leftAnchor="82.0" AnchorPane.rightAnchor="67.0" AnchorPane.topAnchor="189.0">
+         <children>
+            <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="1109.0" style="-fx-background-color: #364150;" text="Manage Exams" textFill="#f2ebeb" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <FontAwesomeIconView fill="#f2f2e5" glyphName="CALENDAR_CHECK_ALT" size="15" />
+               </graphic>
+               <font>
+                  <Font name="FontAwesome Regular" size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+            <JFXButton fx:id="newExambutton" alignment="CENTER" contentDisplay="RIGHT" layoutX="50.0" layoutY="47.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#newExammethod" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #35AA47;" text="New Exam" textFill="#fcfcfc" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="47.0">
+               <font>
+                  <Font name="FontAwesome Regular" size="13.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#eee8e8" glyphName="PLUS_CIRCLE" size="15" />
+               </graphic>
+            </JFXButton>
+            <HBox layoutX="113.0" layoutY="105.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="239.0" prefWidth="872.0" style="-fx-border-color: #364150;" AnchorPane.leftAnchor="133.20000000000005" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="105.0">
+               <children>
+                  <TableView fixedCellSize="40.0" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="239.0" prefWidth="872.0" HBox.hgrow="ALWAYS">
+                    <columns>
+                      <TableColumn prefWidth="46.0" />
+                      <TableColumn prefWidth="326.0" text="TITLE" />
+                        <TableColumn prefWidth="166.0" text="Category" />
+                        <TableColumn prefWidth="86.0" text="Takens" />
+                    </columns>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TableView>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <Text fill="#8493cf" layoutX="46.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exams" wrappingWidth="140.00003290176392">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

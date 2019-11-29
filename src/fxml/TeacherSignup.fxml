@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="574.0" prefWidth="698.0" stylesheets="@../css/teachersingup.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TeacherSignupController">
+   <children>
+      <AnchorPane layoutX="106.0" prefHeight="543.0" prefWidth="475.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="teacherfirst" labelFloat="true" layoutX="53.0" layoutY="83.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="159.0" promptText="Firstname" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="83.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="teacherlast" labelFloat="true" layoutX="238.0" layoutY="83.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="159.0" promptText="Lastname" AnchorPane.leftAnchor="238.0" AnchorPane.topAnchor="83.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="teacheremail" labelFloat="true" layoutX="53.0" layoutY="196.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="341.0" promptText="Email" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="196.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="teacherpassword" labelFloat="true" layoutX="53.0" layoutY="306.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="341.0" promptText="Password" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="306.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton buttonType="RAISED" layoutX="53.0" layoutY="407.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#signup" prefHeight="54.0" prefWidth="348.0" styleClass="signup" text="Sign Up" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="407.0">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </JFXButton>
+            <Text layoutX="53.0" layoutY="37.0" stroke="#226c9e" strokeType="OUTSIDE" strokeWidth="0.5" text="Sign Up for Teacher Account" wrappingWidth="329.13671875" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="14.0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

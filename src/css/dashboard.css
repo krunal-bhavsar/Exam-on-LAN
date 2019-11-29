@@ -1,0 +1,28 @@
+.border{
+    -fx-border-color: #AAB1BD;
+    -fx-border-width: 0.3;
+}
+.leftsidebutton:focused{
+    
+   -fx-background-color:#FF4C20;
+}
+.leftsidebutton:hover{
+    
+}
+.uppersidelabel:hover{
+    -fx-background-color:#FF4C20;
+    -fx-background-radius: 16.4;
+    -fx-background-insets: -1.4;
+    -fx-border-radius: 15;
+}
+#labelexam{
+    -fx-background-color:#3E66A6;
+}
+#labelstudnets{
+    -fx-background-color:#B3969E;
+}
+.innerlabel{
+    -fx-text-fill:#ffffff;
+    
+  
+}

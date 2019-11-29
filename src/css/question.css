@@ -1,0 +1,10 @@
+.twobutton{
+    -fx-background-color:#13A0D0;
+    -fx-text-fill: white;
+}
+.textfi{
+    -fx-font-size:20px;
+}
+#textchoice{
+    -fx-font-size:15px;
+}
